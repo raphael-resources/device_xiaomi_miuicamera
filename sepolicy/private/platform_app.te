@@ -1,7 +1,2 @@
 allow platform_app app_data_file:file { execute };
 allow platform_app camera_data_file:file { execute };
-
-# On Android 17 the app runs as platform_app_36. The Leica port loads the
-# native libraries of its qigsaw feature splits (panorama, mimoji,
-# movielens, ...) from its data dir.
-allow platform_app_36 app_data_file:file execute;
